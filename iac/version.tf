@@ -14,7 +14,7 @@ terraform {
     resource_group_name  = "teste-tf"
     storage_account_name = "stgtfmzn01devdemo"
     container_name       = "tfstate"
-    key                  = "tf.tfstate"
+    key                  = "tfnovo.tfstate"
     use_oidc = true
   }
 }
