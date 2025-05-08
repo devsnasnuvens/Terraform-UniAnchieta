@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "novo-app-uni"
+  name     = "novo-app-unianchieta"
   location = "eastus2"
 }
 
 resource "azurerm_service_plan" "asp" {
-  name                = "uniteste-service-plan"
+  name                = "unianchieta-service-plan"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Windows"
@@ -16,7 +16,7 @@ resource "azurerm_windows_web_app" "webapp_unianchieta" {
     azurerm_service_plan.asp
   ]
 
-  name                = "mznhiehrwo"
+  name                = "manzanunianchieta"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.asp.id
